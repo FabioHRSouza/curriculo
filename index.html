@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Fábio H R Souza</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+        }
+
+        body {
+            background: #f2f4f8;
+            color: #333;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        /* BOTÃO PDF */
+        .acoes {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .btn-pdf {
+            background: #1f3c88;
+            color: #fff;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .btn-pdf:hover {
+            background: #162e66;
+        }
+
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            color: #1f3c88;
+        }
+
+        header h2 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        .contato {
+            text-align: right;
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .contato p {
+            margin-bottom: 4px;
+        }
+
+        section {
+            margin-bottom: 25px;
+        }
+
+        section h3 {
+            color: #1f3c88;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            border-left: 4px solid #1f3c88;
+            padding-left: 10px;
+        }
+
+        .texto {
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .lista {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        .lista li {
+            margin-bottom: 8px;
+            padding-left: 15px;
+            position: relative;
+        }
+
+        .lista li::before {
+            content: "•";
+            color: #1f3c88;
+            position: absolute;
+            left: 0;
+        }
+
+        .habilidades {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .habilidade {
+            background: #eef2ff;
+            padding: 8px 12px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 0.85rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: #777;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .contato {
+                text-align: left;
+                margin-top: 15px;
+            }
+
+            .acoes {
+                text-align: left;
+            }
+        }
+
+        /* ====== ESTILO PARA PDF / IMPRESSÃO ====== */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+                padding: 0;
+            }
+
+            .acoes {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="acoes">
+        <button class="btn-pdf" onclick="baixarPDF()">📄 Baixar em PDF</button>
+    </div>
+
+    <header>
+        <div>
+            <h1>Fábio Henrique Rodrigues de Souza</h1>
+            <h2>Analista de Sistemas | Negócios & Tecnologia | Transição para TI</h2>
+        </div>
+
+        <div class="contato">
+            <p>📍 São José - SC</p>
+            <p>📧 fabiohrsouza@gmail.com</p>
+            <p>📞 (48) 99628-2288</p>
+            <p>🔗 linkedin.com/in/fabiohrsouza</p>
+            <p><i class="fab fa-github" style="font-size:48px;">github.com/FabioHRSouza</i></p>
+        </div>
+    </header>
+
+    <section>
+        <h3>Objetivo</h3>
+        <p class="texto">
+            Profissional com mais de 15 anos de experiência na área comercial, 
+            atuando na interface entre negócios, clientes e sistemas. Graduado 
+            em Administração, Recursos Humanos e Análise e Desenvolvimento de 
+            Sistemas, com pós-graduação em Gestão Comercial. Em transição para 
+            a área de Tecnologia, com foco em análise de sistemas, processos e 
+            soluções digitais, unindo visão estratégica, lógica de programação 
+            e entendimento profundo das necessidades do usuário e do negócio.
+        </p>
+    </section>
+
+    <section>
+        <h3>Formação Acadêmica</h3>
+        <ul class="lista">
+            <h4>Pós Graduação:</h4>
+            <li><strong>FAAL</strong> Pós-graduação em Gestão Comercial</li>
+        </ul>
+        <ul class="lista">
+            <h4>Graduações:</h4>
+            <li><strong>UNICESUMAR</strong> – Análise e Desenvolvimento de Sistemas</li>
+            <li><strong>CRUZEIRO DO SUL</strong> – Administração</li>
+            <li><strong>UNICESUMAR</strong> – Recursos Humanos</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Cursos Complementares</h3>
+        <ul class="lista">
+            <li>SENAI – Desenvolvedor Front-end React(em andamento)</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Experiencia Profissional</h3>
+        <ul class="lista">
+            <li><b>Representante Comercial – Miranda Alumínio Ltda - Fev/2022 - atual</b></li>
+                <p>Atuação direta com sistemas de gestão (ERP/CRM), análise de pedidos, 
+                    controle de carteira de clientes e integração entre áreas comercial, 
+                    logística e financeiro. Participação no levantamento de necessidades 
+                    de clientes, padronização de processos comerciais e melhoria do fluxo 
+                    de informações, com impacto direto na experiência do cliente e redução 
+                    de retrabalho.</p>
+            <li><b>Representante Comercial – Perfilados Londrina Ltda - Jan/2012 - Ago/2021</b></li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h3>Habilidades</h3>
+        <div class="habilidades">
+            <div class="habilidade">HTML</div>
+            <div class="habilidade">CSS</div>
+            <div class="habilidade">JavaScript</div>
+            <div class="habilidade">Pacote Office</div>
+            <div class="habilidade">Comunicação/Organização</div>
+            
+        </div>
+    </section>
+
+    <section>
+        <h3>Informações Adicionais</h3>
+	<ul class="lista">
+            <li>Facilidade com tecnologia</li>
+            <li>Interesse em aprendizado contínuo</li>
+            <li>Facilidade de adaptação a novos ambientes</li>
+	    <li>Responsabilidade e disponibilidade para novos desafios</li>
+        </ul>
+    </section>
+
+    <footer>
+        Currículo desenvolvido em HTML, CSS e JavaScript
+    </footer>
+
+</div>
+
+<script>
+    function baixarPDF() {
+        window.print();
+    }
+</script>
+
+</body>
+</html>
