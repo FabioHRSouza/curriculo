@@ -29,7 +29,6 @@
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
         }
 
-        /* BOTÃO PDF */
         .acoes {
             text-align: right;
             margin-bottom: 20px;
@@ -119,7 +118,7 @@
 
         .habilidades {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
             gap: 10px;
             margin-top: 10px;
         }
@@ -155,7 +154,6 @@
             }
         }
 
-        /* ====== ESTILO PARA PDF / IMPRESSÃO ====== */
         @media print {
             body {
                 background: #fff;
@@ -180,106 +178,96 @@
 <div class="container">
 
     <div class="acoes">
-        <button class="btn-pdf" onclick="baixarPDF()">📄 Baixar em PDF</button>
+        <button class="btn-pdf" onclick="window.print()">📄 Baixar em PDF</button>
     </div>
 
     <header>
         <div>
             <h1>Fábio Henrique Rodrigues de Souza</h1>
-            <h2>Analista de Sistemas | Negócios & Tecnologia | Transição para TI</h2>
+            <h2>Suporte Técnico | Análise de Sistemas | Em desenvolvimento para Programação</h2>
         </div>
 
         <div class="contato">
             <p>📍 São José - SC</p>
-            <p><a href="mailto:email@exemplo.com">📧 fabiohrsouza@gmail.com</a></p>
-            <p><a href="https://wa.me/5511999999999">📞 (48) 99628-2288</a></p>
-            <p><a href="https://www.exemplo.com" target="_blank" rel="noopener noreferrer">🔗 linkedin.com/in/fabiohrsouza</a></p>
-            <p><a href="https://github.com/FabioHRSouza/" target="_blank" rel="noopener noreferrer">🔗github.com/FabioHRSouza</a></p>
+            <p>📧 fabiohrsouza@gmail.com</p>
+            <p>📞 (48) 99628-2288</p>
+            <p>🔗 linkedin.com/in/fabiohrsouza</p>
+            <p>🔗 github.com/FabioHRSouza</p>
         </div>
     </header>
 
     <section>
         <h3>Objetivo</h3>
         <p class="texto">
-            Profissional com mais de 15 anos de experiência na área comercial, 
-            atuando na interface entre negócios, clientes e sistemas. Graduado 
-            em Administração, Recursos Humanos e Análise e Desenvolvimento de 
-            Sistemas, com pós-graduação em Gestão Comercial. Em transição para 
-            a área de Tecnologia, com foco em análise de sistemas, processos e 
-            soluções digitais, unindo visão estratégica, lógica de programação 
-            e entendimento profundo das necessidades do usuário e do negócio.
+            Profissional com mais de 15 anos de experiência em atendimento a clientes e processos de negócio, 
+            atuando na interface entre usuários, sistemas e áreas internas. Graduado em Administração, 
+            Recursos Humanos e Análise e Desenvolvimento de Sistemas, com pós-graduação em Gestão Comercial. 
+            Em transição para a área de Tecnologia, com foco em Suporte Técnico e Análise de Sistemas, 
+            buscando aplicar conhecimentos técnicos, lógica de programação e visão de negócio, com objetivo 
+            de crescimento futuro para desenvolvimento de software.
         </p>
     </section>
 
     <section>
         <h3>Formação Acadêmica</h3>
         <ul class="lista">
-            <h4>Pós Graduação:</h4>
-            <li><strong>FAAL</strong> Pós-graduação em Gestão Comercial</li>
-        </ul>
-        <ul class="lista">
-            <h4>Graduações:</h4>
-            <li><strong>UNICESUMAR</strong> – Análise e Desenvolvimento de Sistemas</li>
-            <li><strong>CRUZEIRO DO SUL</strong> – Administração</li>
-            <li><strong>UNICESUMAR</strong> – Recursos Humanos</li>
+            <li><strong>Pós-graduação:</strong> Gestão Comercial – FAAL</li>
+            <li><strong>Graduações:</strong></li>
+            <li>Análise e Desenvolvimento de Sistemas – UNICESUMAR</li>
+            <li>Administração – Cruzeiro do Sul</li>
+            <li>Recursos Humanos – UNICESUMAR</li>
         </ul>
     </section>
 
     <section>
         <h3>Cursos Complementares</h3>
         <ul class="lista">
-            <li>SENAI – Desenvolvedor Front-end React(em andamento)</li>
+            <li>SENAI – Desenvolvedor Front-end React (em andamento)</li>
         </ul>
     </section>
 
     <section>
-        <h3>Experiencia Profissional</h3>
+        <h3>Experiência Profissional</h3>
         <ul class="lista">
-            <li><b>Representante Comercial – Miranda Alumínio Ltda - Fev/2022 - atual</b></li>
-                <p>Atuação direta com sistemas de gestão (ERP/CRM), análise de pedidos, 
-                    controle de carteira de clientes e integração entre áreas comercial, 
-                    logística e financeiro. Participação no levantamento de necessidades 
-                    de clientes, padronização de processos comerciais e melhoria do fluxo 
-                    de informações, com impacto direto na experiência do cliente e redução 
-                    de retrabalho.</p>
-            <li><b>Representante Comercial – Perfilados Londrina Ltda - Jan/2012 - Ago/2021</b></li>
+            <li><strong>Representante Comercial – Miranda Alumínio Ltda | Fev/2022 – Atual</strong></li>
+            <li>Atuação diária com sistemas de gestão (ERP/CRM), apoiando usuários e analisando inconsistências em pedidos e cadastros.</li>
+            <li>Interface entre áreas comercial, logística e financeiro, auxiliando na resolução de problemas operacionais.</li>
+            <li>Levantamento de necessidades de clientes e apoio na padronização de processos.</li>
+            <li>Contribuição para melhoria do fluxo de informações e redução de retrabalho.</li>
 
+            <li style="margin-top:10px;"><strong>Representante Comercial – Perfilados Londrina Ltda | Jan/2012 – Ago/2021</strong></li>
+            <li>Atendimento a clientes, organização de pedidos e acompanhamento de processos internos.</li>
         </ul>
     </section>
 
     <section>
-        <h3>Habilidades</h3>
+        <h3>Habilidades Técnicas</h3>
         <div class="habilidades">
             <div class="habilidade">HTML</div>
             <div class="habilidade">CSS</div>
             <div class="habilidade">JavaScript</div>
-            <div class="habilidade">Pacote Office</div>
-            <div class="habilidade">Comunicação/Organização</div>
-            
+            <div class="habilidade">Lógica de Programação</div>
+            <div class="habilidade">ERP / CRM</div>
+            <div class="habilidade">Pacote Office (Excel)</div>
         </div>
     </section>
 
     <section>
-        <h3>Informações Adicionais</h3>
-	<ul class="lista">
-            <li>Facilidade com tecnologia</li>
-            <li>Interesse em aprendizado contínuo</li>
-            <li>Facilidade de adaptação a novos ambientes</li>
-	    <li>Responsabilidade e disponibilidade para novos desafios</li>
-        </ul>
+        <h3>Habilidades Comportamentais</h3>
+        <div class="habilidades">
+            <div class="habilidade">Comunicação clara com usuários</div>
+            <div class="habilidade">Análise e resolução de problemas</div>
+            <div class="habilidade">Facilidade de aprendizado</div>
+            <div class="habilidade">Organização</div>
+            <div class="habilidade">Trabalho em equipe</div>
+        </div>
     </section>
 
     <footer>
-        Currículo desenvolvido em HTML, CSS e JavaScript
+        Currículo desenvolvido em HTML, CSS e JavaScript, refletindo aprendizado prático e evolução contínua na área de tecnologia.
     </footer>
 
 </div>
-
-<script>
-    function baixarPDF() {
-        window.print();
-    }
-</script>
 
 </body>
 </html>
